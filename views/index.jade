@@ -1,5 +1,20 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  nav.nav
+    div.nav-left
+        a.nav-item
+            Logo.title.is-2
+    div.nav-righ.nav-menu
+        a.nav-item Home
+    div.nav-righ.nav-menu
+        a.nav-item Documentation
+    div.nav-righ.nav-menu
+        a.nav-item Blog
+    div.nav-righ.nav-menu
+        span.nav-item
+            a.button
+                span Twitter
+  div.container
+    h1.title.is-1= title
+    p Welcome to #{title}
+  

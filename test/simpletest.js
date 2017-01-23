@@ -2,9 +2,9 @@ var request = require('supertest'),
 	app = require('../app');
 
 describe('Handsel', function() {
-	it('Welcome to test party', function(done) {
+	it('Welcome to Express', function(done) {
 		request(app).get('/')
 		.expect(200)
-		.expect(/Hello Handsel Please test me again/, done);
+		.expect(/Welcome to Express/, done);
 	});
 });
